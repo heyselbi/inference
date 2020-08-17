@@ -55,4 +55,7 @@ RUN  echo "/usr/local/cuda/compat" >> /etc/ld.so.conf.d/cuda-10-0.conf && \
 
 ADD . /root
 
+RUN ls -lt && \
+    ls inference
+
 ENTRYPOINT ["/bin/bash"]
