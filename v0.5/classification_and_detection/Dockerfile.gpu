@@ -53,3 +53,5 @@ RUN  echo "/usr/local/cuda/compat" >> /etc/ld.so.conf.d/cuda-10-0.conf && \
     ldconfig
 
 ENTRYPOINT ["/bin/bash"]
+
+ADD . /root
