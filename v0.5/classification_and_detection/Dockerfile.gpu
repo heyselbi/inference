@@ -47,7 +47,8 @@ RUN cd /root && \
     cd inference/loadgen && \
     pip install pybind11 && \
     CFLAGS="-std=c++14" python setup.py install && \
-    cd /root
+    cd /root && \
+    ls -lt
 
 RUN  echo "/usr/local/cuda/compat" >> /etc/ld.so.conf.d/cuda-10-0.conf && \
     ldconfig
