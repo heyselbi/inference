@@ -42,16 +42,14 @@ RUN pip install tensorflow-gpu==1.14 onnxruntime-gpu
 RUN pip install Cython && pip install pycocotools
 
 
-RUN cd /tmp && \
+RUN cd /root && \
     git clone https://github.com/mlperf/inference && \
     cd inference/loadgen && \
     pip install pybind11 && \
     CFLAGS="-std=c++14" python setup.py install && \
-    rm -rf mlperf
+    cd /root
 
 RUN  echo "/usr/local/cuda/compat" >> /etc/ld.so.conf.d/cuda-10-0.conf && \
     ldconfig
-    
-ADD . /root
 
 ENTRYPOINT ["/bin/bash"]
