@@ -1,7 +1,7 @@
 #!/bin/bash
 
-export MODEL_DIR=/root/v0.5/classification_and_detection/dataset
-export DATA_DIR=/root/v0.5/classification_and_detection/dataset
+export MODEL_DIR=/root/inference/v0.5/classification_and_detection/dataset
+export DATA_DIR=/root/inference/v0.5/classification_and_detection/dataset
 
 source run_common.sh
 
