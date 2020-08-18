@@ -36,3 +36,5 @@ ck locate env --tags=object-detection,dataset,coco,2017,val,original
 ls -lt
 
 pwd
+
+
