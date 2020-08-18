@@ -22,6 +22,8 @@ cd /root
 
 pwd
 
+ls -lt
+
 start_fmt=$(date +%Y-%m-%d\ %r)
 echo "STARTING RUN AT $start_fmt"
 
