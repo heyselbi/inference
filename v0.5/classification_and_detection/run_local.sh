@@ -3,7 +3,7 @@
 echo "directories"
 
 export MODEL_DIR=/root/v0.5/classification_and_detection/dataset
-export DATA_DIR=/root/inference/v0.5/classification_and_detection/dataset
+export DATA_DIR=/tekton/home/CK-TOOLS/dataset-coco-2017-val
 
 echo "run_common"
 source ./run_common.sh
