@@ -29,3 +29,10 @@ cp `ck locate env --tags=aux`/val.txt `ck locate env --tags=val`/val_map.txt
 ls -lt
 
 pwd
+
+ck install package --tags=object-detection,dataset,coco,2017,val,original
+ck locate env --tags=object-detection,dataset,coco,2017,val,original
+
+ls -lt
+
+pwd
